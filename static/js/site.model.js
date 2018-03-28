@@ -24,6 +24,11 @@ var Sites = {
 		"navClass": "nav-lighter",
 		"iceClass": "ice-gold"
 	},
+	"subheader": {
+		"hideScrollbar": false,
+		"navClass": "nav-dark",
+		"iceClass": "ice-gold"
+	},
 	"portfolio": {
 		"hideScrollbar": false,
 		"navClass": "nav-dark",

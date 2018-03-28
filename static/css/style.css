@@ -22,6 +22,12 @@
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Caslon224Std-Bold';
+  src: url('../fonts/Caslon224Std-Bold.otf') format('otf');
+  font-weight: 900;
+  font-style: bold;
+}
 strong {
   font-weight: 700;
 }
@@ -638,7 +644,7 @@ FULL WIDTH GRID
   max-width: 100%;
 }
 .cbp-rfgrid a:hover div {
-  opacity: 1;
+  opacity: 0;
   transition: 0.3s;
 }
 .cbp-rfgrid a div {
@@ -647,7 +653,7 @@ FULL WIDTH GRID
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0, 0, 0, 0.3);
+  background: #131313;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -657,7 +663,7 @@ FULL WIDTH GRID
   -ms-align-items: center;
   align-items: center;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
   padding: 50px;
 }
 .cbp-rfgrid a div h3 {
@@ -681,7 +687,7 @@ FULL WIDTH GRID
   color: #fff;
 }
 .index-headline {
-  background: url(../img/thumb/27.jpg) center left 30%;
+  background: #131313;
   background-size: cover;
   height: 100vh;
 }
@@ -700,11 +706,19 @@ FULL WIDTH GRID
   color: #d8a639;
   transition: 0.3s;
 }
+.subheader {
+  background: #fff;
+}
+.subheader .headline {
+  padding: 100px 0 100px 0;
+  font-size: 48px;
+  font-family: 'Caslon224Std-Bold';
+}
 .portfolio {
   background: #000;
 }
 .portfolio img {
-  filter: grayscale(100%);
+  filter: grayscale(100%) brightness(50%) contrast(130%);
 }
 /* Example for media query: change number of items per row */
 @media screen and (max-width: 1190px) {
