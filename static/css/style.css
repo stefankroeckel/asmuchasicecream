@@ -708,11 +708,14 @@ FULL WIDTH GRID
 }
 .subheader {
   background: #fff;
+  position: fixed;
 }
 .subheader .headline {
-  padding: 100px 0 100px 0;
-  font-size: 48px;
+  max-width: 850px;
+  padding: 200px 0 190px 200px;
+  font-size: 80px;
   font-family: 'Caslon224Std-Bold';
+  max-height: 600px;
 }
 .portfolio {
   background: #000;
