@@ -629,7 +629,7 @@ FULL WIDTH GRID
   width: 50%;
   /* Fallback */
   width: -webkit-calc(50%);
-  width: calc(50%);
+  width: calc(100% / 2);
 }
 .cbp-rfgrid a img {
   display: block;
@@ -703,6 +703,9 @@ FULL WIDTH GRID
 .portfolio {
   background: #000;
 }
+.portfolio img {
+  filter: grayscale(100%);
+}
 /* Example for media query: change number of items per row */
 @media screen and (max-width: 1190px) {
   .fullsize-zoom {
@@ -714,7 +717,7 @@ FULL WIDTH GRID
     width: 50%;
     /* Fallback */
     width: -webkit-calc(50%);
-    width: calc(50%);
+    width: calc(100% / 2);
   }
 }
 @media screen and (max-width: 945px) {
@@ -737,7 +740,7 @@ FULL WIDTH GRID
     width: 50%;
     /* Fallback */
     width: -webkit-calc(50%);
-    width: calc(50%);
+    width: calc(100% / 2);
   }
   .cbp-rfgrid a div {
     opacity: 1;
@@ -768,7 +771,7 @@ FULL WIDTH GRID
     width: 100%;
     /* Fallback */
     width: -webkit-calc(100%);
-    width: calc(100%);
+    width: calc(100% / 1);
   }
   .menu-fullscreen {
     margin-top: -120px;
@@ -793,7 +796,7 @@ FULL WIDTH GRID
     width: 100%;
     /* Fallback */
     width: -webkit-calc(100%);
-    width: calc(100%);
+    width: calc(100% / 1);
   }
   .halfsize {
     width: 100%;
@@ -804,7 +807,7 @@ FULL WIDTH GRID
     width: 100%;
     /* Fallback */
     width: -webkit-calc(100%);
-    width: calc(100%);
+    width: calc(100% / 1);
   }
   h1 {
     text-shadow: none;
