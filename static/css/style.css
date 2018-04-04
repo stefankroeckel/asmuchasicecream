@@ -975,12 +975,14 @@ CONTENT
   width: 100%;
   max-width: 600px;
   position: relative;
+  margin: auto;
 }
 .one-column p {
   width: 70% !important;
 }
 .two-column p {
   width: 100% !important;
+  margin-bottom: 50px;
 }
 .clear {
   clear: both;
