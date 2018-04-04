@@ -339,11 +339,9 @@ h2 {
   font-size: 100px;
 }
 h3 {
-  font-family: 'Brandon Grotesque';
-  font-weight: 700;
-  font-size: 24px;
+  font-family: 'Caslon224Std-Bold';
+  font-size: 64px;
   color: #333;
-  text-transform: uppercase;
 }
 h4 {
   font-family: 'Brandon Grotesque';
@@ -351,6 +349,12 @@ h4 {
   font-size: 16px;
   color: #333;
   text-transform: uppercase;
+}
+h5 {
+  font-family: 'Brandon Grotesque';
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
 }
 p {
   font-family: 'Calluna';
@@ -433,7 +437,7 @@ p {
   color: #FFD271;
 }
 .inline {
-  margin: 50px 0 200px 0;
+  margin: 50px 0 0 0;
 }
 .inline .instaname {
   margin-bottom: 50px;
@@ -480,6 +484,7 @@ p {
 }
 .fullsize {
   width: 100%;
+  padding: 0px 50px 50px 50px;
 }
 .fullsize-zoom {
   position: absolute;
@@ -666,7 +671,7 @@ FULL WIDTH GRID
   opacity: 1;
   padding: 50px;
 }
-.cbp-rfgrid a div h3 {
+.cbp-rfgrid a div h5 {
   width: 100%;
   color: #fff;
   text-transform: uppercase;
@@ -735,6 +740,9 @@ FULL WIDTH GRID
     /* Fallback */
     width: -webkit-calc(50%);
     width: calc(100% / 2);
+  }
+  #ajax-content {
+    width: 100%;
   }
 }
 @media screen and (max-width: 945px) {
@@ -967,8 +975,6 @@ CONTENT
   width: 100%;
   max-width: 600px;
   position: relative;
-  margin: auto;
-  margin-bottom: 50px;
 }
 .one-column p {
   width: 70% !important;
@@ -982,10 +988,14 @@ CONTENT
 .content {
   position: relative;
   width: 1140px;
+  margin: auto;
 }
 .content .text-intro {
   width: 1140px;
-  margin: 100px auto 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .content .text-intro h1 {
   font-size: 43px;
@@ -1073,8 +1083,8 @@ PORTFOLIO GRID
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-  margin-top: 100px;
   margin-bottom: 100px;
+  margin-top: 50px;
 }
 .prev-next a {
   color: black;
@@ -1106,9 +1116,6 @@ PORTFOLIO GRID
 }
 .next-button:hover {
   color: #FFD271;
-}
-#ajax-content {
-  width: 100%;
 }
 .portfolio-grid {
   width: 1170px;

@@ -435,11 +435,9 @@ h2 {
 }
 
 h3 {
-  font-family: @sans-serif;
-  font-weight: @medium;
-  font-size: 24px;
+  font-family: @caslon;
+  font-size: 64px;
   color: @dark-grey;
-  text-transform: uppercase;
 }
 
 h4 {
@@ -448,6 +446,13 @@ h4 {
   font-size: 16px;
   color: @dark-grey;
   text-transform: uppercase;
+}
+
+h5 {
+  font-family: @sans-serif;
+  font-size: 24px;
+  font-weight: @medium;
+  color: @dark-grey;
 }
 
 p {
@@ -542,7 +547,7 @@ p {
 }
 
 .inline {
-  margin: 50px 0 200px 0;
+  margin: 50px 0 0 0;
 
   .instaname {
     margin-bottom: 50px;
@@ -600,6 +605,7 @@ p {
 
 .fullsize {
   width: 100%;
+  padding: 0px 50px 50px 50px;
 }
 
 .fullsize-zoom {
@@ -814,7 +820,7 @@ FULL WIDTH GRID
         opacity: 1;
         padding: 50px;
 
-        h3 {
+        h5 {
           width: 100%;
           color: @white;
           text-transform: uppercase;
@@ -896,6 +902,7 @@ FULL WIDTH GRID
     width: -webkit-calc(100% / 2);
     width: calc(100% / 2);
   }
+  #ajax-content{width:100%;}
 }
 
 @media screen and (max-width: 945px) {
@@ -1161,11 +1168,9 @@ CONTENT
 */
 
 .two-column{
-  width:100%;
+  width: 100%;
   max-width: 600px;
-  position:relative;
-  margin: auto;
-  margin-bottom: 50px;
+  position: relative;
 }
 
 .one-column p{
@@ -1183,12 +1188,15 @@ CONTENT
 .content{
   position:relative;
   width:1140px;
+  margin: auto;
 }
 
-
 .content .text-intro{
-  width: 1140px;
-  margin: 100px auto 0;
+    width: 1140px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
   h1 {
     font-size:43px;
@@ -1251,8 +1259,8 @@ PORTFOLIO GRID
   width:100%;
   max-width:1170px;
   margin:0 auto;
-  margin-top: 100px;
   margin-bottom: 100px;
+  margin-top: 50px;
 
   a {
     color:black;
@@ -1292,8 +1300,6 @@ PORTFOLIO GRID
     color: @gold;
   }
 }
-
-#ajax-content{width:100%;}
 
 .portfolio-grid{
   width:1170px;
