@@ -711,6 +711,14 @@ FULL WIDTH GRID
   color: #d8a639;
   transition: 0.3s;
 }
+.index-headline .hand {
+  background: url(../img/hand_illustration.svg);
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+}
 .subheader {
   background: #fff;
   position: fixed;
@@ -726,7 +734,7 @@ FULL WIDTH GRID
   background: #000;
 }
 .portfolio img {
-  filter: grayscale(100%) brightness(50%) contrast(130%);
+  /* filter: grayscale(100%) brightness(50%) contrast(130%); */
 }
 /* Example for media query: change number of items per row */
 @media screen and (max-width: 1190px) {
@@ -1011,6 +1019,12 @@ CONTENT
   color: #333;
   margin-top: 30px;
   width: 40%;
+}
+.plyr__control {
+  display: none;
+}
+.plyr__menu {
+  display: none !important;
 }
 .typed-cursor {
   opacity: 1;

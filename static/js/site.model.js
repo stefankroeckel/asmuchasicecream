@@ -174,7 +174,12 @@ var Sites = {
 		"navClass": "nav-lighter",
 		"iceClass": "ice-gold"
 	},
-	"hidden-julia": {
+	"julia": {
+		"hideScrollbar": false,
+		"navClass": "nav-lighter",
+		"iceClass": "ice-gold"
+	},
+	"cassandra": {
 		"hideScrollbar": false,
 		"navClass": "nav-lighter",
 		"iceClass": "ice-gold"
