@@ -57,7 +57,6 @@ Ajax link page transitions
     return false;
 	});
 
-
 /*-------------------------------------------
 When you click back arrow
 ---------------------------------------------*/
