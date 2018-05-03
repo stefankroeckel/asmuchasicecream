@@ -658,7 +658,7 @@ FULL WIDTH GRID
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background: #131313;
+  background: #000;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -692,7 +692,7 @@ FULL WIDTH GRID
   color: #fff;
 }
 .index-headline {
-  background: #131313;
+  background: #000;
   background-size: cover;
   height: 100vh;
 }
