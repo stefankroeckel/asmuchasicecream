@@ -31,7 +31,7 @@ var Sites = {
 	},
 	"portfolio": {
 		"hideScrollbar": false,
-		"navClass": "nav-dark",
+		"navClass": "nav-lighter",
 		"iceClass": "ice-gold"
 	},
 	"tapes": {

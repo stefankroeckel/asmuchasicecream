@@ -682,10 +682,7 @@ FULL WIDTH GRID
   width: 100%;
   cursor: pointer;
   max-width: 100%;
-}
-.cbp-rfgrid a:hover div {
-  background-color: rgba(0, 0, 0, 0.7);
-  transition: 0.3s;
+  visibility: hidden;
 }
 .cbp-rfgrid a div {
   position: absolute;
@@ -693,7 +690,7 @@ FULL WIDTH GRID
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: #000000;
+  background-color: #ffffff;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -706,9 +703,13 @@ FULL WIDTH GRID
   opacity: 1;
   padding: 50px;
 }
-.cbp-rfgrid a div h5 {
+.cbp-rfgrid a div:hover {
+  background-color: #000000;
+  transition: 0.3s;
+}
+.cbp-rfgrid a h5 {
   width: 100%;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   font-size: 1.4em;
   letter-spacing: 2px;
@@ -727,7 +728,7 @@ FULL WIDTH GRID
   color: #fff;
 }
 .index-headline {
-  background: #000;
+  background: #fff;
   background-size: cover;
   height: 100vh;
 }
@@ -739,7 +740,7 @@ FULL WIDTH GRID
   margin-left: -441px;
   font-size: 80px;
   font-weight: 900;
-  color: #fff;
+  color: #000;
   line-height: 1.4;
   letter-spacing: 40px;
 }
@@ -754,6 +755,7 @@ FULL WIDTH GRID
   margin: auto;
   position: relative;
   top: 50%;
+  color: #000;
 }
 .subheader {
   background: #fff;

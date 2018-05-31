@@ -343,24 +343,24 @@ $(document).ready(function () {
 
 
 
-$(window).scroll(function(){
-    $(".index-headline").css("opacity", 1 - $(window).scrollTop() / 1250);
-});
+// $(window).scroll(function(){
+//    $(".index-headline").css("opacity", 1 - $(window).scrollTop() / 1250);
+//		});
+//
+		$(document).ready(function(){
+			$('a[href^="#"]').on('click',function (e) {
+			    e.preventDefault();
 
-$(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
+			    var target = this.hash;
+			    var $target = $(target);
 
-	    var target = this.hash;
-	    var $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-});
+			    $('html, body').stop().animate({
+			        'scrollTop': $target.offset().top
+			    }, 900, 'swing', function () {
+			        window.location.hash = target;
+			    });
+			});
+		});
 
 (function() {
   // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
